@@ -1,9 +1,10 @@
 /* 
 // color:
-//      green       1,168,79    #01A84F
-//      blue        0,108,183   #006CB7
-//      yellow      198,226,246 #C6E2F6     Button hover background color
-//      red         139,62,60   #8B3E3C
+//      purple      rgb(142, 98, 245)       #8e62f5
+//      blue        rgb(38, 54, 92)         #26365c     Website background color
+//      yellow      rgb(254, 201, 87)       #fec957     Button hover background color
+//      red         rgb(220, 69, 58)        #dc453a
+//      white       rgb(255, 255, 255)      #fff        Text color
 // font:
 //      Heading     Petrona     600         SemiBold
 //      Paragraph   Quicksand   400         Regular
@@ -11,7 +12,7 @@
 */
 
 body {
-  background-color: #01A84F;
+  background-color: #26365c;
   color: #fff;
 }
 
@@ -37,30 +38,30 @@ button {
 }
 
 /* CLASS */
-.bg-green {
-  background-color: #01A84F;
+.bg-blue {
+  background-color: #26365c;
 }
 
-.bg-blue {
-  background-color: #006CB7;
+.bg-purple {
+  background-color: #8e62f5;
   box-shadow: 3px 3px 10px 1px #333;
 }
 
 .bg-blur {
-  box-shadow: 0 0 20px 20px #006CB7;
+  box-shadow: 0 0 20px 20px #8e62f5;
 }
 
-.bg-blue-f {
-  background-color: rgba(0, 108, 183, 0.5);
+.bg-purple-f {
+  background-color: rgba(142, 98, 245, 0.5);
   border-radius: 1rem 8rem 1rem 1rem;
-  background-image: linear-gradient(to bottom left, #006CB7, gray);
+  background-image: linear-gradient(to bottom left, #8e62f5, gray);
 }
 
 @media screen and (max-width: 576px){
-  .bg-blue-f {
-    background-color: rgba(0, 108, 183, 0.5);
+  .bg-purple-f {
+    background-color: rgba(142, 98, 245, 0.5);
     border-radius: 1rem;
-    background-image: linear-gradient(to bottom left, #006CB7, gray);
+    background-image: linear-gradient(to bottom left, #8e62f5, gray);
   }
 }
 
@@ -79,19 +80,19 @@ button {
   margin-top: calc(100vh + var(--offset));
 }
 
-.btn-cRed{
+.btn-red{
   /* button styling */
   text-decoration: none;
   padding: 10px;
   color: #fff;
-  background: #8B3E3C;
+  background: #dc453a;
   border-radius: 100px;
 	white-space: nowrap;
   box-shadow: 3px 3px 10px 1px #333;
 }
 
-.btn-cRed:hover{
-  background: #C6E2F6;
+.btn-red:hover{
+  background: #fec957;
   color: #000;
 }
 
